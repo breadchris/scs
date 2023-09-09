@@ -17,7 +17,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/alexedwards/scs/v2"
+	"github.com/breadchris/scs/v2"
 	"github.com/alexedwards/scs/boltstore"
 	"go.etcd.io/bbolt"
 )

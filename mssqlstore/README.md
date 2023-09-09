@@ -29,7 +29,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/alexedwards/scs/v2"
+	"github.com/breadchris/scs/v2"
 	"github.com/alexedwards/scs/mssqlstore"
 
 	_ "github.com/denisenkom/go-mssqldb"

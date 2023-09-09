@@ -15,7 +15,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/alexedwards/scs/v2"
+	"github.com/breadchris/scs/v2"
 	"github.com/alexedwards/scs/redisstore"
 	"github.com/gomodule/redigo/redis"
 )

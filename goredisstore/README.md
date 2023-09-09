@@ -15,7 +15,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/alexedwards/scs/v2"
+	"github.com/breadchris/scs/v2"
 	"github.com/alexedwards/scs/goredisstore"
 	"github.com/redis/go-redis/v9"
 )
