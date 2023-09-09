@@ -220,6 +220,13 @@ type sessionResponseWriter struct {
 	written        bool
 }
 
+func (sw *sessionResponseWriter) Flush() {
+	f, ok := sw.ResponseWriter.(http.Flusher)
+	if ok == true {
+		f.Flush()
+	}
+}
+
 func (sw *sessionResponseWriter) Write(b []byte) (int, error) {
 	if !sw.written {
 		sw.sessionManager.commitAndWriteSessionCookie(sw.ResponseWriter, sw.request)
